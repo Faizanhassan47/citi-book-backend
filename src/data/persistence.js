@@ -5,7 +5,6 @@ import { normalizeUserPasswords } from "../utils/passwords.js";
 
 const collectionNames = [
   "users",
-  "attendance",
   "tasks",
   "clients",
   "categories",

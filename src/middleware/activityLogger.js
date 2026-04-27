@@ -16,7 +16,6 @@ function getActionDescription(req) {
   else if (url.includes("/api/demands")) entity = "demand";
   else if (url.includes("/api/clients")) entity = "client";
   else if (url.includes("/api/inventory")) entity = "inventory item";
-  else if (url.includes("/api/attendance")) entity = "attendance";
   else if (url.includes("/api/users")) entity = "user profile";
 
   if (method === "POST") return `Created a new ${entity}`;

@@ -25,7 +25,7 @@ export const db = {
       isActive: true,
       createdBy: "OWN001",
       createdAt: "2026-04-16T09:30:00.000Z",
-      permissions: ["attendance", "tasks", "clients", "demands"],
+      permissions: ["tasks", "clients", "demands"],
       department: "Sales"
     },
     {
@@ -39,7 +39,7 @@ export const db = {
       isActive: true,
       createdBy: "OWN001",
       createdAt: "2026-04-16T10:10:00.000Z",
-      permissions: ["attendance", "tasks"],
+      permissions: ["tasks"],
       department: "Field"
     },
     {
@@ -53,42 +53,8 @@ export const db = {
       isActive: false,
       createdBy: "OWN001",
       createdAt: "2026-04-16T10:25:00.000Z",
-      permissions: ["attendance", "clients", "demands"],
+      permissions: ["clients", "demands"],
       department: "Support"
-    }
-  ],
-  attendance: [
-    {
-      id: "att-1",
-      userCode: "EMP001",
-      date: "2026-04-16",
-      checkIn: "09:05",
-      checkOut: null,
-      status: "present"
-    },
-    {
-      id: "att-2",
-      userCode: "EMP002",
-      date: "2026-04-16",
-      checkIn: "09:18",
-      checkOut: "18:01",
-      status: "present"
-    },
-    {
-      id: "att-3",
-      userCode: "EMP003",
-      date: "2026-04-16",
-      checkIn: null,
-      checkOut: null,
-      status: "absent"
-    },
-    {
-      id: "att-4",
-      userCode: "EMP001",
-      date: "2026-04-15",
-      checkIn: "09:00",
-      checkOut: "18:04",
-      status: "present"
     }
   ],
   tasks: [

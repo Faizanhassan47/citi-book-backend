@@ -1,7 +1,7 @@
 import express from "express";
 import { requireAuth, requirePermission, requireRole } from "../middleware/auth.js";
 import authRoutes from "./auth.routes.js";
-import attendanceRoutes from "./attendance.routes.js";
+
 import billsRoutes from "./bills.routes.js";
 import clientsRoutes from "./clients.routes.js";
 import dashboardRoutes from "./dashboard.routes.js";
@@ -24,7 +24,7 @@ router.use(activityLogger);
 
 router.use("/dashboard", requireAuth, requireRole("owner"), dashboardRoutes);
 router.use("/users", requireAuth, requireRole("owner"), usersRoutes);
-router.use("/attendance", requireAuth, requirePermission("attendance"), attendanceRoutes);
+
 router.use("/tasks", requireAuth, requirePermission("tasks"), tasksRoutes);
 router.use("/clients", requireAuth, requirePermission("clients"), clientsRoutes);
 router.use("/demands", requireAuth, requirePermission("demands"), demandsRoutes);

@@ -27,7 +27,7 @@ function requireSuperAdmin(req, res) {
 function defaultPermissions(role) {
   return role === "owner"
     ? ["all"]
-    : ["attendance", "tasks", "clients", "demands"];
+    : ["tasks", "clients", "demands"];
 }
 
 function ensureOwnerCapacity(excludeId) {
